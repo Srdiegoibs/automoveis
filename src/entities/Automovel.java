@@ -20,6 +20,9 @@ public class Automovel {
     @Column(name = "ano_fabricacao")
     private Integer anoFabricacao;
     
+    @Column(name = "marca")
+    private String marca;
+
     @Column(name = "ano_modelo")
     private Integer anoModelo;
     
@@ -35,6 +38,8 @@ public class Automovel {
     @Column(name = "modelo")
     private String modelo;
 
+
+    
 
     public int getId() {
         return id;
@@ -90,5 +95,13 @@ public class Automovel {
 
     public void setModelo(String modelo) {
         this.modelo = modelo;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
     }
 }
