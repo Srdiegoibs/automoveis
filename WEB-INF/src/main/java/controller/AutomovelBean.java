@@ -1,6 +1,5 @@
-package controller;
 
-import entities.Automovel;
+import main.java.entities.Automovel;
 import javax.faces.bean.ManagedBean;
 
 
@@ -17,7 +16,7 @@ public class AutomovelBean {
         return automovel;
     }
 
-    public void setAutomovel(Automovel automovel) {
+    public void setAutomovel(final Automovel automovel) {
         this.automovel = automovel;
     }
 }
